@@ -6,29 +6,31 @@
 ###########################################################################################
 
 # # List
-def fibo(n):
-	x = 0
-	y = 1
-	my_numbers = []
-	
-	for n in range(n):
-		my_numbers.append(x)
-		prev = x
-		x = y
-		y = prev + x
-	return my_numbers
-
-print(fibo(10))
-
-# # Generator
 # def fibo(n):
-#     x = 0
-#     y = 1
+# 	x = 0
+# 	y = 1
+# 	my_numbers = []
+	
+# 	for n in range(n):
+# 		my_numbers.append(x)
+# 		prev = x
+# 		x = y
+# 		y = prev + x
+# 	return my_numbers
 
-#     for n in range(n):
-#         yield x
-#         x = y
-#         y = x + y
+# print(fibo(10))
 
-# for num in fibo(10):
-#     print(num)
+# Generator
+def fibo(n):
+    x = 0
+    y = 1
+
+    for n in range(n):
+        yield x
+        prev = x
+        x = y
+        y = x + prev
+
+
+for num in fibo(10):
+    print(num)
