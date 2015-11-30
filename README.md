@@ -8,7 +8,7 @@
 ##### [III. Control Flow and Statements](#controlstatements)
 ##### [IV. Errors and Exceptions](#errors)
 ##### [V. Built In Functions](#builtin)
-##### [VI. Data Types](#datatypes)
+##### [VI. Python OOP](#oop)
 
 
 ### Terminal Trick
@@ -691,7 +691,7 @@ for num in fibo(10):
 	* Built-In - Variables preassigned in the built in names module
 * You can use `globals()` and `locals()` method to check the status of a variable
 	
-### Python OOP
+### <a name=oop>Python OOP</a>
 
 * Everything in Python is an object
 
