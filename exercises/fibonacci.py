@@ -5,13 +5,6 @@
 # [0,1,2,3,5,8,13,21,34]
 ###########################################################################################
 
-import pdb
-
-
-# The below functions don't give me the proper output, it's giving me:
-# [0, 1, 2, 4, 8, 16, 32, 64, 128, 256]
-# fix that shit when you get home
-
 # # List
 def fibo(n):
 	x = 0
@@ -20,9 +13,9 @@ def fibo(n):
 	
 	for n in range(n):
 		my_numbers.append(x)
+		prev = x
 		x = y
-		y = x + y
-		# pdb.set_trace()
+		y = prev + x
 	return my_numbers
 
 print(fibo(10))
